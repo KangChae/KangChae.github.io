@@ -1,1 +1,76 @@
+:root {
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --text: #111;
+    --accent: #4a90e2;
+}
 
+[data-theme="dark"] {
+    --bg: #121212;
+    --card: #1e1e1e;
+    --text: #f4f4f4;
+    --accent: #4a90e2;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.screen { display: none; padding: 1rem; }
+.screen.active { display: block; }
+
+.card {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.balance-card h1 {
+    font-size: 2rem;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background: var(--card);
+    border-top: 1px solid #ddd;
+}
+
+nav button {
+    flex: 1;
+    padding: 1rem;
+    background: none;
+    border: none;
+}
+
+.fab {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: var(--accent);
+    color: white;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+}
+.hidden { display: none; }
+
+.lock-container {
+    text-align: center;
+    margin-top: 40%;
+}
