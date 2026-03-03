@@ -1,8 +1,0 @@
-{
-  "name": "Church Ledger",
-  "short_name": "Ledger",
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#4a90e2",
-  "icons": []
-}
