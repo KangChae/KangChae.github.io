@@ -5,16 +5,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function navigate(screenId) {
     document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
-    document.getElementById(screenId).classList.add("active");
-}
-
-function toggleTheme() {
-    const current = document.documentElement.getAttribute("data-theme");
-    document.documentElement.setAttribute("data-theme", current === "dark" ? "light" : "dark");
-}
-
-function openAddModal() {
-    alert("Transaction modal coming next phase");
+    document.getElementById(screenId).classList.add("
 }
 
 function loadDashboard() {
